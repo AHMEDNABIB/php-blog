@@ -327,6 +327,22 @@ nav button{
     line-height: 1.7;
 }
 
+/* category title */
+
+.category__title{
+    height: 15rem;
+    margin-top: 4.5rem;
+    background: var(--color-gray-900);
+    display: grid;
+    place-items: center;
+}
+
+.empty__page{
+    height: 70vh;
+    display: grid;
+    place-content: center;
+}
+
 /* Footer */
 /* .footer__container{
     display: grid;
