@@ -343,29 +343,63 @@ nav button{
     place-content: center;
 }
 
-/* Footer */
-/* .footer__container{
+
+/* General form */
+
+.form__section{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    height: 100vh;
+}
+.form__section-container{
+    width: var(--form-width);
 }
 
-.footer h4{
+.alert__message{
+    /* background: red; */
+    padding: 0.8rem 1.4rem;
+    margin-bottom: 1rem;
+    border-radius: var(--card-border-radius-2);
+}
+.alert__message.error{
+    background: var(--color-red-light);
+    color: var(--color-red);
+}
+.alert__message.success{
+    background: var(--color-green-light);
+    color: var(--color-green);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form__control{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+input, textarea,select{
+    padding: 0.8rem 1.4rem;
+    background-color: var(--color-gray-900);
+    border-radius: var(--card-border-radius-2);
+    resize: none;
     color: var(--color-white);
-    margin-bottom: 0.6rem;
 }
 
-.footer ul li{
-    padding: 0.4rem 0;
+.form__section-container small{
+    margin-top: 1rem;
+    display: block;
+}
+.form__section-container small a{
+    color: var(--color-white);
 }
 
-.footer ul a{
-    opacity: 0.75;
-}
+/* Footer */
 
-.footer ul a:hover{
-    letter-spacing: 0.2rem;
-    opacity: 1;
-} */
 
 .footer{
     background: var(--color-gray-900);
